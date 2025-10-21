@@ -1,0 +1,15 @@
+import math
+
+def edistance(x, y):
+    distance = math.sqrt((y[0] - x[0])**2 + (y[1] - x[1])**2)
+    return distance```
+
+*3d.py*
+```python
+from euclidean_distance_module import edistance
+
+X = (1, 3)
+Y = (2, 3)
+
+result = edistance(X, Y)
+print("Euclidean distance between X and Y:", result)
